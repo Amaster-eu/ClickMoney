@@ -11,7 +11,7 @@ Fully automated trading system that allows people with zero trading experience t
 
 ![compatibility](https://amaster.eu/demo/img/attention.png) Front-End only: html5, css3, bootstrap3, jQuery.
 
-![preview](https://amaster.eu/demo/video/demo-clickmoney.mp4)
+![preview](https://amaster.eu/demo/img/no-image.jpg)
 ![compatibility](https://amaster.eu/demo/img/compatible.jpg)
 
 ---
