@@ -11,13 +11,12 @@ Fully automated trading system that allows people with zero trading experience t
 
 ![compatibility](https://amaster.eu/demo/img/attention.png) Front-End only: html5, css3, bootstrap3, jQuery.
 
-![preview](https://amaster.eu/demo/img/no-image.jpg)
+![preview](https://amaster.eu/demo/video/demo-clickmoney.mp4)
 ![compatibility](https://amaster.eu/demo/img/compatible.jpg)
 
 ---
 
-[Live demo](https://amaster.eu/demo/ClickMoney/)
-Includes the following pages:
+[Live demo](https://amaster.eu/demo/ClickMoney/) includes the following pages:
 - Home Page
 - Register Page
 - Money Page
