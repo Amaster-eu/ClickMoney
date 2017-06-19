@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You Popup | ClickMoney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <div class="popup">
+        <div class="modal-button">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#thank-you">
+                Click here to see Thank You Popup
+            </button>
+        </div>
+    </div>
+    <div id="thank-you" class="modal fade thank-you" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="header-text">
+                        YOU'RE ALMOST THERE!
+                    </p>
+                    <p class="arrow">
+                        <img src="img/popup/backAr3a.png">
+                        <img src="img/popup/backAr3a.png">
+                        <img src="img/popup/backAr3a.png">
+                    </p>
+                    <p class="thank-you-block">
+                        <span>THANK YOU!</span>
+                    </p>
+                    <p class="footer-text">
+                        Just one moment while we verify your
+                        <br/><strong>private E-Mail</strong> and <strong>IP Address</strong> now.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script>
+    $(function() {
+        (function rotate() {
+            $(".thank-you .arrow").addClass('rotated');
+            setTimeout(function() {
+                $(".thank-you .arrow").removeClass('rotated');
+                setTimeout(function() {
+                    rotate();
+                }, 200);
+            }, 4000);
+        })();
+    });
+    </script>
+
+    <!-- Demos Menu -->
+    <link rel="stylesheet" href="css/examples.css" />
+    <script src="js/examples.js"></script>
+    <select id="demosMenu">
+        <option id="index" selected>Choose Demo</option>
+        <option id="index">Home Page</option>
+        <option id="register">Register Page</option>
+        <option id="money">Money Page</option>
+        <option id="through">Through Page</option>
+        <option id="dashboard">Dashboard Page</option>
+        <option id="popupLogin">Login Popup</option>
+        <option id="popupDeposit">Deposit Popup</option>
+    </select>
+
+</body>
+
+</html>

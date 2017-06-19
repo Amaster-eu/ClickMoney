@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deposit Popup | ClickMoney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <div class="popup">
+        <div class="modal-button">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#deposit">
+                Click here to see Deposit Popup
+            </button>  
+         </div>
+    </div>
+
+    <div id="deposit" class="modal fade popups" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-header">
+                <img class="img-responsive deposit-video" src="img/shutterstock_374080492.jpg">
+                <img class="deposit-play" src="img/play-button.png">
+            </div>
+            <div class="modal-content">
+                <p class="set-deposit">Set Your Initial Deposit<span class="deposit-text-grey"> $250 Minimum DEPOSIT</span></p>
+                <div class="col-sm-11">
+                    <div id="slider"></div>
+                </div>
+                <p class="set-risk">Set Risk Level<span class="deposit-text-grey"> 1 Lowest - 5 HIGHEST</span></p>
+                <div class="col-sm-11">
+                    <div id="slider2" class="second-slider"></div>
+                </div>
+                <input type="hidden" id="amount" class="form-control">
+                <input type="hidden" id="duration" class="form-control">
+                <p class="profit-per-day">Profit Per Day:<span> $2752</span></p>
+                <p class="dailyAverage">Daily average for 30 days</p>
+                <div class="col-xs-12">
+                    <button type="submit">
+                        <div class="row">
+                            <div class="col-md-11 col-xs-9">
+                                GO TO DEPOSIT PAGE
+                            </div>
+                            <div class="arrow">
+                                <img src="img/arrow.png">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#slider").slider({
+            range: "min",
+            animate: true,
+            value: 1,
+            min: 250,
+            max: 3750,
+            step: 10,
+            slide: function(event, ui) {
+                update(1, ui.value); //changed
+            }
+        });
+
+        $("#slider2").slider({
+            range: "min",
+            animate: true,
+            value: 1,
+            min: 1,
+            max: 5,
+            step: 0.1,
+            slide: function(event, ui) {
+                update(2, ui.value); //changed
+            }
+        });
+
+        //Added, set initial value.
+        $("#amount").val(250);
+        $("#duration").val(1);
+        $("#amount-label").text(0);
+        $("#duration-label").text(0);
+
+        update();
+    });
+
+    //changed. now with parameter
+    function update(slider, val) {
+        //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
+        var $amount = slider == 1 ? val : $("#amount").val();
+        var $duration = slider == 2 ? val : $("#duration").val();
+
+        $total = "$" + ($amount * $duration);
+        $("#amount").val($amount);
+        $("#amount-label").text($amount);
+        $("#duration").val($duration);
+        $("#duration-label").text($duration);
+        $("#total").val($total);
+        $("#total-label").text($total);
+
+        $('#slider a').html('<label><img class="leftArrow" src="img/arrowLeft.png"> ' + '$' + $amount + ' <img class="rightArrow" src="img/arrowRight.png"></label>');
+        $('#slider2 a').html('<label><img class="leftArrow" src="img/arrowLeft.png"> ' + $duration + ' <img class="rightArrow" src="img/arrowRight.png"></label>');
+    }
+    </script>
+
+    <!-- Demos Menu -->
+    <link rel="stylesheet" href="css/examples.css" />
+    <script src="js/examples.js"></script>
+    <select id="demosMenu">
+        <option id="index" selected>Choose Demo</option>
+        <option id="index">Home Page</option>
+        <option id="register">Register Page</option>
+        <option id="money">Money Page</option>
+        <option id="through">Through Page</option>
+        <option id="dashboard">Dashboard Page</option>
+        <option id="popupLogin">Login Popup</option>
+        <option id="popupThankYou">Thank You Popup</option>
+    </select>
+
+</body>
+
+</html>

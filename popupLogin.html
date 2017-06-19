@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Popup | ClickMoney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <div class="popup">
+        <div class="modal-button">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login">
+                Click here to see Login Popup
+            </button>  
+         </div>
+    </div>
+
+    <div id="login" class="modal fade login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img class="login-logo" src="img/ClickMoneyLogo/Logo-white.svg">
+                <img class="login-lower-arrow" src="img/login-arrow-1.png">
+                <img class="login-upper-arrow" src="img/login-arrow-2.png">
+                <a href="" class="pull-right login-close" data-dismiss="modal" aria-label="Close"><img src="img/svg/circle_delete.svg"></a>
+                <p>
+                    <span>LOGIN</span> TO YOUR
+                    <br> MEMBERS AREA
+                </p>
+                <form method="post" action="" class="login-form">
+                    <div class="form-fields">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 vcenter">
+                                <input type="text" id="login" name="login" pattern="^(?=.{3,15}$)[a-zA-Z][a-zA-Z][\u0600-\u06FF]*$*\s?[a-zA-Z][\u0600-\u06FF]*$+$" value required placeholder="Your login" title="Please enter 3-15 characters (alphabets only)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 vcenter">
+                                <input type="password" id="password" name="password" required placeholder="Your password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <button type="submit">
+                                <div class="row">
+                                    <div class="arrow">
+                                        <img src="img/key.png" />
+                                    </div>
+                                    <div class="col-xs-12">
+                                        LOGIN NOW
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <p class="forgot-password">
+                    <a href="">Forgot your password?</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://gaff.s3.amazonaws.com/js/gaff.js"></script>
+
+    <!-- Demos Menu -->
+    <link rel="stylesheet" href="css/examples.css" />
+    <script src="js/examples.js"></script>
+    <select id="demosMenu">
+        <option id="index" selected>Choose Demo</option>
+        <option id="index">Home Page</option>
+        <option id="register">Register Page</option>
+        <option id="money">Money Page</option>
+        <option id="through">Through Page</option>
+        <option id="dashboard">Dashboard Page</option>
+        <option id="popupDeposit">Deposit Popup</option>
+        <option id="popupThankYou">Thank You Popup</option>
+    </select>
+
+</body>
+
+</html>

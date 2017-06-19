@@ -1,0 +1,339 @@
+.popup:before {
+    content: '';
+    background: rgb(45, 168, 115);
+    background: -moz-linear-gradient(45deg, rgba(45, 168, 115, 0.9) 0%, rgba(15, 170, 156, 0.9) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(45, 168, 115, 0.9) 0%, rgba(15, 170, 156, 0.9) 100%);
+    background: linear-gradient(45deg, rgba(45, 168, 115, 0.9) 0%, rgba(15, 170, 156, 0.9) 100%);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.modal-button {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: url(../img/popup/backgroundLetters.png) no-repeat;
+    height: 320px;
+    background-size: 100% auto;
+    padding: 0;
+    text-align: center;
+}
+.modal-button button {
+    margin: 14vh 0;
+}
+
+/***************common styles**************************/
+.deposit-popup input[type="text"]:focus,
+.deposit-popup input[type="email"]:focus,
+.deposit-popup input[type="password"]:focus,
+.deposit-popup select.select-register:focus {
+    border: 2px solid #21c0ac;
+    outline: none;
+    color: #21c0ac;
+    border-radius: 0;
+}
+.deposit-popup label {
+    display: inline-block;
+    width: 140px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    border-radius: 4px;
+    position: relative;
+}
+.deposit-popup .modal-header {
+    border-bottom: none;
+}
+.deposit-popup .modal-dialog {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    width: 690px;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    -o-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+}
+body .deposit-popup {
+    font-family: 'Montserrat', sans-serif;
+}
+.deposit-popup .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+/*********************************login popup************************************/
+.deposit-popup {
+    background-color: #06b6a4;
+    background: rgb(45, 168, 115);
+    background: -moz-linear-gradient(45deg, rgba(45, 168, 115, 0.5) 0%, rgba(15, 170, 156, 0.5) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(45, 168, 115, 0.5) 0%, rgba(15, 170, 156, 0.5) 100%);
+    background: linear-gradient(45deg, rgba(45, 168, 115, 0.5) 0%, rgba(15, 170, 156, 0.5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2da873', endColorstr='#0faa9c', GradientType=1);
+}
+.deposit-popup .modal-header {
+    position: relative;
+    padding: 0;
+}
+.deposit-popup .modal-content {
+    border: none;
+    border-radius: 0;
+    padding: 65px 65px 160px 65px;
+}
+.deposit-popup .modal-content label {
+    background: -webkit-linear-gradient(left, #06b6a4 0%, #27b378 100%);
+    background: -moz-linear-gradient(left, #06b6a4 0%, #27b378 100%);
+    background: linear-gradient(to right, #06b6a4 0%, #27b378 100%);
+}
+.deposit-popup .deposit-video {
+    width: 100%;
+}
+.deposit-popup .deposit-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    -o-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+}
+.deposit-popup .modal-content p {
+    font-weight: 600;
+    font-size: 1.7em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+}
+.deposit-popup a.ui-slider-handle:focus {
+    outline: none;
+}
+.deposit-popup .modal-content .deposit-text-grey {
+    color: #ababab;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.deposit-popup .ui-widget-content {
+    background: #e6e6e6;
+    color: #222222;
+    margin-top: 4px;
+    border-radius: 2px;
+}
+.deposit-popup .dailyAverage {
+    color: #ababab;
+    font-size: 18px !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: lighter !important;
+    line-height: 1px !important;
+}
+.deposit-popup .leftArrow {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.deposit-popup .rightArrow {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.deposit-popup .ui-slider-horizontal .ui-slider-handle {
+    top: -.7em;
+}
+.deposit-popup .ui-slider-horizontal {
+    height: .4em;
+    margin-left: 8%;
+}
+.deposit-popup .ui-slider-horizontal .ui-slider-range {
+    height: 100%;
+}
+.deposit-popup .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    height: 2.2em;
+    cursor: default;
+    margin: 0 -10px auto -45px;
+    text-align: center;
+    line-height: 38px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.deposit-popup .second-slider a {
+    margin: 0 -20px auto -20px;
+}
+.deposit-popup .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+.deposit-popup .set-risk {
+    margin-top: 15%;
+}
+.deposit-popup .set-deposit,
+.deposit-popup .set-risk {
+    margin-bottom: 5%;
+}
+.deposit-popup .profit-per-day {
+    margin-top: 16%;
+}
+.deposit-popup .profit-per-day span {
+    color: #2bbc98;
+}
+.deposit-popup .second-slider label {
+    width: 80px;
+}
+.deposit-popup button {
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-attachment: inherit;
+    height: 65px;
+    letter-spacing: 0.2em;
+    border-radius: 4px;
+    border: none;
+    background: #06b6a4;
+    background: -webkit-linear-gradient(left, #06b6a4 0%, #27b378 100%);
+    background: -moz-linear-gradient(left, #06b6a4 0%, #27b378 100%);
+    background: linear-gradient(to right, #06b6a4 0%, #27b378 100%);
+    color: white;
+    font-weight: bold;
+    margin: 4% auto;
+    width: 75%;
+    font-size: 1em;
+    display: block;
+    outline: none;
+}
+.deposit-popup button .row {
+    margin: 20px 0;
+    position: relative;
+}
+.deposit-popup button .row .arrow img {
+    width: auto;
+}
+.deposit-popup button .row .arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/**************************mobiles, tablets (login popup)*************************/
+@media (min-width: 992px) and (max-width: 1799px) {
+    .deposit-popup .modal-content {
+        padding: 30px 65px 100px 65px;
+    }
+    
+    .deposit-popup .profit-per-day {
+        margin-top: 13%;
+    }
+}
+@media (max-width: 991px) {
+    .deposit-popup .modal-dialog {
+        width: 70%;
+    }
+    
+    .deposit-popup .modal-content {
+        border: none;
+        border-radius: 0;
+        padding: 10px 65px 100px 65px;
+    }
+    
+    .deposit-popup .set-risk,
+    .deposit-popup .set-deposit {
+        margin-bottom: 10%;
+    }
+    
+    .deposit-popup .second-slider label {
+        width: 70px;
+    }
+    
+    .deposit-popup .set-risk {
+        margin-top: 20%;
+    }
+    
+    .deposit-popup label {
+        display: inline-block;
+        width: 100px;
+    }
+    
+    .deposit-popup .ui-slider-horizontal .ui-slider-handle {
+        top: -.9em;
+    }
+    
+    .deposit-popup button .row {
+        margin: 2px 0;
+    }
+    
+    .deposit-popup .login-lower-arrow {
+        top: 1px;
+        left: 1px;
+    }
+    
+    .deposit-popup .login-upper-arrow {
+        top: 10px;
+        left: 30px;
+    }
+    
+    .deposit-popup .login-form button {
+        width: 53%;
+    }
+    
+    .deposit-popup .dailyAverage {
+        line-height: 18px !important;
+    }
+}
+@media (max-width: 539px) {
+    .deposit-popup .modal-content {
+        padding: 15px 65px 100px 65px;
+    }
+    
+    .deposit-popup .modal-dialog {
+        width: 100%;
+    }
+    
+    .deposit-popup .login-form button {
+        width: 80%;
+    }
+    
+    .deposit-popup .dailyAverage {
+        line-height: 15px !important;
+    }
+    
+    .deposit-popup button {
+        width: 100%;
+    }
+}
+
+/**************************end mobiles, tablets*************************/

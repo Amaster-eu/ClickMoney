@@ -1,0 +1,363 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | ClickMoney</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">    
+    <link rel="stylesheet" href="css/bootstrap.min.css" >    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" href="css/db.css" >    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div class="dashboard">
+    <div class="container dashboard-container">
+        <div class="row rowDashboard">
+            <div class="col-sm-3 col-md-1 sidebar">
+                <div class="row">
+                    <div class="col-md-12 logoYellow"><a href="#"><img class="img-responsive" src="img/ClickMoneyLogo/Logo-yellow.svg"></a></div>
+                </div>
+                <ul class="nav in nav-sidebar">
+                    <li>
+                        <a href="" class="active glyphicon1"><i class="glyphicon glyphicon2"></i> Positions</a>
+                    </li>
+                    <li>
+                        <a href="" class="glyphicon1 "><i class="glyphicon glyphicon3"></i> My Account</a>
+                    </li>
+                    <li>
+                        <a href="" class="glyphicon1"><i class="glyphicon glyphicon4"></i> Billing</a>
+                    </li>
+                    <li>
+                        <a href="" class="glyphicon1"><i class="glyphicon glyphicon5"></i> Giude</a>
+                    </li>
+                    <li>
+                        <a href="" class="glyphicon1"><i class="glyphicon glyphicon6"></i> FAQ</a>
+                    </li>
+                    <li>
+                        <a href="" class="glyphicon1"><i class="glyphicon glyphicon7"></i> Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-md-11 main">
+                <div class="row headtextDB">
+                    <div class="col-md-2 col-xs-4 your-position"><span class="yPosDb">Your Positions</span></div>
+                    <div class="col-md-1 col-xs-1 iconTDb0"><img src="img/greenArrow.png"><span class="iconTDb">WON</span></div>
+                    <div class="col-md-1 col-xs-1 iconTDb0"><img src="img/redArrow.png"><span class="iconTDb">LOST</span></div>
+                    <div class="col-md-1 col-xs-1 iconTDb0"><img src="img/yellowArrow.png"><span class="iconTDb">OPEN</span></div>
+                </div>
+                <div class="row headtextDB1">
+                    <div class="col-md-7 col-xs-12"><span >view the status of all your positions</span></div>
+                </div>
+                <div class="alert alert-info alertDashb" role="alert">
+                    <div class="col-xs-2 th-icon2"><img src="img/question.png"> </div>
+                    <div class="col-xs-10"><a href="#" class="alert-link">Choose how much you want to trade with for each position.</a></div>
+                </div>
+                <div class="table-responsive tableDB">
+                    <table class="table table-striped">
+                        <tr class="table-top">
+                           <th class="dbTb dbTb01">
+                               <div class="th-icon">
+                                   <img src="img/dollar.png" class="imgTbDB">
+                               </div>
+                               <div class="icons-text">
+                                    <div class="th-text">$12,576.<span class="littleZir ">00</span></div>
+                                    <div class="th-text th-text3"><span class="little1">MY BALANCE</span></div>
+                               </div>
+                            </th>
+                            <th class="dbTb dbTb02">
+                                <div class="th-icon">
+                                    <img src="img/arrowGreenDb.png" class="imgTbDB">
+                                </div>
+                                <div class="icons-text">
+                                    <div class="th-text">54373</div>
+                                    <div class="th-text th-text3"><span class="little1">WON TRADES</span></div>
+                                </div>
+                            </th>
+                            <th class="dbTb dbTb02">
+                                <div class="th-icon">
+                                    <img src="img/arrowred.png" class="imgTbDB">
+                                </div>
+                                <div class="icons-text">
+                                    <div class="th-text">9874</div>
+                                    <div class="th-text th-text3"><span class="little1">LOST TRADES</span></div>
+                                </div>
+                            </th>
+                            <th class="dbTb2 dbTb04"></th>
+                            <th class="dbTb dbTb05">
+                                <div class="th-icon">
+                                    <img src="img/question.png">
+                                </div>
+                                <div class="icons-text">
+                                    <div class="th-text">$500.<span class="littleZir ">00</span></div>
+                                    <div class="th-text th-text3"><span class="little1">TRADING AMT</span></div>
+                                </div>
+                                <div class="dashboard-button">
+                                    <div>
+                                        <a class="buttonInTable9" href="" data-toggle="modal" data-target="#deposit" ><span class="buttonInTable">SET AMOUNT</span></a>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="table table-striped">
+                        <thead>
+                        </thead>
+                        <tbody class="tableDb">
+                        <tr class="tableDb-header">
+                            <td class="headerTbD">ASSET</td>
+                            <td class="headerTbD">POSITION</td>
+                            <td class="headerTbD">AMOUNT</td>
+                            <td class="headerTbD">EXECUTION DATE</td>
+                            <td class="headerTbD">END DATE</td>
+                            <td class="headerTbD headerTbD1">STATUS</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Dollar Index F</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3">$365.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/greenArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">EUR/AUD</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3">$1.948.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/greenArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Dollar Index F</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3">$25.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/greenArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">USD/EUR</td>
+                            <td class="td2">CALL</td>
+                            <td class="td3 td3-yellow">$25.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/yellowArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">USD/EUR</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3 td3-red">$725.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/yellowArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">USD/EUR</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3 td3-red">$725.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/redArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Dollar Index F</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3">$365.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/redArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">EUR/AUD</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3">$1.948.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/yellowArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Dollar Index F</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3">$25.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/greenArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">EUR/AUD</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3">$1.948.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/greenArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Dolar Index F</td>
+                            <td class="td2">PUT</td>
+                            <td class="td3">$25.00</td>
+                            <td class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td class="td6"><img src="img/greenArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td  class="td1">EUR/AUD</td>
+                            <td  class="td2">PUT</td>
+                            <td  class="td3">$1.948.00</td>
+                            <td  class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td  class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td  class="td6"><img src="img/greenArrow.png"></td>
+                        </tr>
+                        <tr>
+                            <td  class="td1">USD/EUR</td>
+                            <td  class="td2">CALL</td>
+                            <td  class="td3 td3-yellow">$25.00</td>
+                            <td  class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td  class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td  class="td6"><img src="img/yellowArrow.png"></td>
+                        </tr>
+                          <tr>
+                            <td  class="td1">Dollar Index F</td>
+                            <td  class="td2">PUT</td>
+                            <td  class="td3">$25.00</td>
+                            <td  class="td4">10:45am, 07 / 23 / 2017</td>
+                            <td  class="td5">1:45am, 07 / 23 / 2017</td>
+                            <td  class="td6"><img src="img/yellowArrow.png"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row dashboard-footer">
+                    <div class="col-xs-12">
+                        <div class="col-md-10 dsh-bottom-menu">
+                            <ul class="fnavigation fnavigation-dashboard ">
+                                <li><a href="pagesForFooter/govermentDisclaimer.html" target="_blank">Government Disclaimer</a></li>
+                                <li><a href="pagesForFooter/privacyPolicy.html" target="_blank">Privacy Policy</a></li>
+                                <li><a href="pagesForFooter/terms.html" target="_blank">Terms</a></li>
+                                <li><a href="pagesForFooter/earningsDisclaimer.html" target="_blank">Earnings Disclaimer</a></li>
+                                <li><a href="pagesForFooter/spamPolicy.html" target="_blank">Spam Policy</a></li>
+                                <li><a href="pagesForFooter/Support.html" target="_blank">Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 copyright1 copyright2">
+                            <span class="copyright">© 2017 ClickMoney. All Rights Reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="deposit"  class="modal fade popups"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-header">
+            <img  class="img-responsive deposit-video" src="img/shutterstock_374080492.jpg">
+            <img class="deposit-play" src="img/play-button.png">
+        </div>
+        <div class="modal-content">
+            <p class="set-deposit">Set Your Initial Deposit<span class="deposit-text-grey"> $250 Minimum DEPOSIT</span></p>
+            <div class="col-sm-11">
+                <div id="slider"></div>
+            </div>
+            <p class="set-risk">Set Risk Level<span class="deposit-text-grey"> 1 Lowest - 5 HIGHEST</span></p>
+            <div class="col-sm-11">
+                <div id="slider2" class="second-slider"></div>
+            </div>
+            <input type="hidden" id="amount" class="form-control">
+            <input type="hidden" id="duration" class="form-control">
+            <p class="profit-per-day">Profit Per Day:<span> $2752</span></p>
+            <p class="dailyAverage">Daily average for 30 days</p>
+            <div class="col-xs-12">
+                <button type="submit">
+                    <div class="row">
+                        <div class="col-md-11 col-xs-9">
+                            GO TO DEPOSIT PAGE
+                        </div>
+                        <div class="arrow">
+                            <img src="img/arrow.png">
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#slider").slider({
+            range: "min",
+            animate: true,
+            value:1,
+            min: 250,
+            max: 3750,
+            step: 10,
+            slide: function(event, ui) {
+                update(1,ui.value); //changed
+            }
+        });
+
+        $("#slider2").slider({
+            range: "min",
+            animate: true,
+            value:1,
+            min: 1,
+            max: 5,
+            step: 0.1,
+            slide: function(event, ui) {
+                update(2,ui.value); //changed
+            }
+        });
+
+        //Added, set initial value.
+        $("#amount").val(250);
+        $("#duration").val(1);
+        $("#amount-label").text(0);
+        $("#duration-label").text(0);
+
+        update();
+    });
+
+    //changed. now with parameter
+    function update(slider,val) {
+        //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
+        var $amount = slider == 1?val:$("#amount").val();
+        var $duration = slider == 2?val:$("#duration").val();
+
+        $total = "$" + ($amount * $duration);
+        $( "#amount" ).val($amount);
+        $( "#amount-label" ).text($amount);
+        $( "#duration" ).val($duration);
+        $( "#duration-label" ).text($duration);
+        $( "#total" ).val($total);
+        $( "#total-label" ).text($total);
+
+        $('#slider a').html('<label><img class="leftArrow" src="img/arrowLeft.png"> '+'$'+$amount+' <img class="rightArrow" src="img/arrowRight.png"></label>');
+        $('#slider2 a').html('<label><img class="leftArrow" src="img/arrowLeft.png"> '+$duration+' <img class="rightArrow" src="img/arrowRight.png"></label>');
+    }
+</script>
+
+    <!-- Demos Menu -->
+    <link rel="stylesheet" href="css/examples.css" />
+    <script src="js/examples.js"></script>
+    <select id="demosMenu">
+        <option id="index" selected>Choose Demo</option>
+        <option id="index">Home Page</option>
+        <option id="register">Register Page</option>
+        <option id="money">Money Page</option>
+        <option id="through">Through Page</option>
+        <option id="popupLogin">Login Popup</option>
+        <option id="popupDeposit">Deposit Popup</option>
+        <option id="popupThankYou">Thank You Popup</option>
+    </select>
+
+</body>
+
+</html>
