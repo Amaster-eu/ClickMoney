@@ -27,6 +27,8 @@ Fully automated trading system that allows people with zero trading experience t
 - Deposit Pop-up
 - Thank You Pop-up
 
+
 The template is based on the form for collecting potential customers. All fields are checked for validity of filling.
+
 **[⬆](#top)**
 ---
