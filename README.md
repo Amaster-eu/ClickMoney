@@ -10,7 +10,7 @@ Visitor is being redirected to the "exit page" if he tries to leave the page wit
 Fully automated trading system that allows people with zero trading experience to earn money on-line.
 
 
-![compatibility](https://amaster.eu/demo/img/attention.png) **Note:** This repo contains Front-End only: html5, css3, bootstrap3, jQuery.
+![compatibility](https://amaster.eu/demo/img/attention.png) **Note:** This repo contains Front-End only.
 
 ![preview](https://amaster.eu/demo/ClickMoney/img/intro.jpg)
 ![compatibility](https://amaster.eu/demo/img/compatible.jpg)
