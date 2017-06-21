@@ -1,0 +1,75 @@
+@font-face { font-family:Montserrat, sans-serif; src:url(../fonts/Montserrat-Bold.otf); }
+@font-face{ font-family:OpenSansLight; src: url(../fonts/OpenSans-Light.ttf);}
+
+/* ==========================================================================
+ HTML5 display definitions  (normalize.css v3.0.2)
+ ========================================================================== */
+*{margin:0;padding:0;}
+html{font-size:100.01%;-ms-text-size-adjust:100.01%;-webkit-text-size-adjust:100.01%;}
+body{margin:0;}
+header,hgroup,menu,section,figure,main,nav,article,aside,details,figcaption,footer,summary{display:block;}
+audio,canvas,video{display:inline-block;vertical-align:middle;}
+audio:not([controls]){display:none;height:0;}
+[hidden],template{display:none;}
+a{color:blue;text-decoration:underline;background-color:transparent;}
+a:focus,a:active,a:hover{outline:0;}
+abbr[title]{border-bottom:1px dotted;}
+h1{font-size:2em;margin:0.67em 0;}
+h2{font-size:1.5em;margin:0.83em 0;}
+h3{font-size:1.17em;margin:1em 0;}
+h4{font-size:1em;margin:1.33em 0;}
+h5{font-size:0.83em;margin:1.67em 0;}
+h6{font-size:0.67em;margin:2.33em 0;}
+b,strong{font-weight:bold;}
+dfn{font-style:italic;}
+mark{background:#ff0;color:#000;}
+small{font-size:80%;}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}
+pre{overflow:auto;}
+p,pre{margin:1.2em;}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:0.8em;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+dl,menu,ol,ul{margin:1em 0;}
+menu,ol,ul{padding:0;}
+navul,navol{list-style:none;list-style-image:none;}
+img{border:0;-ms-interpolation-mode:bicubic;}
+svg:not(:root){overflow:hidden;}
+figure,form{margin:0;}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;}
+button,input{line-height:normal;text-transform:none;}
+button,htmlinput[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+button[disabled],htmlinput[disabled]{cursor:default;}
+button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0; }
+input{line-height:normal;}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto;}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+fieldset{ border:0; margin:0; padding:0;  }
+legend{border:0;padding:0;}
+textarea{overflow:auto;vertical-align:top;resize:vertical;}
+table{border-collapse:collapse;border-spacing:0;}
+td,th{padding:0;}
+
+html { height:100%; background:url(../img/bg_dollar.jpg) no-repeat center center fixed; background-size:cover; }
+body {height:auto !important; height:100%; min-height:100%;  font-family:Montserrat, sans-serif; background:rgba(0, 0, 0, 0.6); }
+.section {width:100%; max-width:1200px; margin:0 auto;  }
+header { text-align:center; color:#fff; }
+h2 {margin:0.45em 0 0;  font-family:Montserrat, sans-serif; font-size:44px;letter-spacing:-0.01em; text-transform:uppercase;  }
+h4 {margin:0; padding-bottom:45px;  font-family:OpenSansLight, sans-serif; font-size:28px;font-weight:lighter; letter-spacing:-0.02em;  }
+h5 {width:100%;margin:1.75em 0 0; font-family:OpenSansLight, sans-serif; font-size:28px; font-weight:lighter; letter-spacing:0.2em; text-transform:uppercase;  color:#fffa69;  }
+header img { width:9.5%; margin:0 auto; padding:2em 0 0; }
+main {padding:2em 1em; background:rgba(255, 255, 255, 0.8); box-shadow:0 15px 45px 15px rgba(0, 0, 0, 0.5);  }
+video {display:block; margin:1em auto;  }
+footer { padding:1em 0; }
+footer > * { display:inline-block; float:none;vertical-align:middle;  }
+footer ul { margin:0; padding:0; list-style:none; }
+footer li { display:inline-block; margin:0; padding:0; }
+footer a {font-family:OpenSansLight, sans-serif; font-size:0.9em; text-decoration:none;  color:#fff; color:#b0b0b0; }
+footer li:after {font-size:0.9em; content:' | '; color:#fff; color:#b0b0b0;  }
+footer li:last-child:after { content:''; }
+footer > img {display:inline-block;  width:100px; margin:0 1em 0 0; }
+.copyright {float:right; padding:12px 0 0 0; font-size:0.9em;text-align:right;  color:#fff;  }
+
