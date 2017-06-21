@@ -27,8 +27,19 @@ Fully automated trading system that allows people with zero trading experience t
 - Deposit Pop-up
 - Thank You Pop-up
 
+ClickMoney template:
+- Simple semantic HTML5 code with CSS3/CSS3 Animation
+- The template has cross-browser compatibility and responsive
+- Code has many explanatory comments
+- Document checking completed. No errors or warnings, please see: [validator.w3.org](https://validator.w3.org/nu/?doc=https%3A%2F%2Famaster.eu%2Fdemo%2FClickMoney%2Findex.html)
+- Components/library/frameworks are used:
+	- jQuery library v3.1.1 
+	- Bootstrap v3.1.1
+	- Amazon S3 FormHelpers
+- The template is based on the form for collecting potential customers. All fields are checked for validity of filling
 
-The template is based on the form for collecting potential customers. All fields are checked for validity of filling.
+The project is finished and closed. Updates are not planned.
+
+---
 
 **[⬆](#top)**
----
